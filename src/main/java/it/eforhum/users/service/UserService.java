@@ -19,7 +19,7 @@ public class UserService implements CrudRepository<User, Integer> {
 
     @Override
     public <S extends User> Iterable<S> saveAll(Iterable<S> entities) {
-        throw new UnimplementedMethodException("service/User - saveAll not implemented");
+        return this.dao.saveAll(entities);
     }
 
     @Override
