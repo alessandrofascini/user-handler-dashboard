@@ -50,7 +50,7 @@ public class UserService implements CrudRepository<User, Integer> {
 
     @Override
     public long count() {
-        throw new UnimplementedMethodException("service/User - findAllById not implemented");
+        throw new UnimplementedMethodException("service/User - count not implemented");
     }
 
     @Override
@@ -65,17 +65,17 @@ public class UserService implements CrudRepository<User, Integer> {
 
     @Override
     public void deleteAllById(Iterable<? extends Integer> integers) {
-        throw new UnimplementedMethodException("service/User - findAllById not implemented");
+        throw new UnimplementedMethodException("service/User - deleteAllById not implemented");
     }
 
     @Override
     public void deleteAll(Iterable<? extends User> entities) {
-        throw new UnimplementedMethodException("service/User - findAllById not implemented");
+        throw new UnimplementedMethodException("service/User - deleteAllById not implemented");
     }
 
     @Override
     public void deleteAll() {
-        throw new UnimplementedMethodException("service/User - findAllById not implemented");
+        throw new UnimplementedMethodException("service/User - deleteAll not implemented");
     }
 
     @Override
