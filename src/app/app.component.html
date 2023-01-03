@@ -1,1 +1,124 @@
-<h1>Say Hello</h1>
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+  <!-- Vertical Navbar -->
+  <nav
+    class="navbar show navbar-vertical h-lg-screen navbar-expand-lg px-0 py-3 navbar-light bg-white border-bottom border-bottom-lg-0 border-end-lg"
+    id="navbarVertical">
+    <div class="container-fluid">
+      <!-- Toggler -->
+      <button class="navbar-toggler ms-n2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+              aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" href="#">
+<!--        <img src="https://preview.webpixels.io/web/img/logos/clever-primary.svg" alt="...">-->
+        Angular X Spring
+      </a>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidebarCollapse">
+        <!-- Navigation -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-people"></i> Users
+            </a>
+          </li>
+        </ul>
+        <!-- Divider -->
+        <hr class="navbar-divider my-5 opacity-20">
+        <!-- Push content down -->
+        <div class="mt-auto"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="h-screen flex-grow-1 overflow-y-lg-auto">
+    <!-- Header -->
+    <header class="bg-surface-primary border-bottom p-6">
+      <div class="container-fluid">
+        <div class="">
+          <div class="row align-items-center">
+            <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+              <!-- Title -->
+<!--              Current Route?-->
+              <h1 class="h2 mb-0 ls-tight">Users</h1>
+            </div>
+            <!-- Actions -->
+            <div class="col-sm-6 col-12 text-sm-end">
+              <div class="mx-n1">
+                <a href="#" class="btn d-inline-flex btn-sm btn-primary mx-1">
+                  <span class=" pe-2">
+                    <i class="bi bi-box-arrow-left"></i>
+                  </span>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="py-6 bg-surface-secondary">
+      <div class="container-fluid">
+<!--       User List-->
+        <div class="card shadow border-0 mb-7">
+          <div class="table-responsive">
+            <table class="table table-hover table-nowrap">
+              <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Username</th>
+                <th scope="col">Born Date</th>
+                <th scope="col">Last Login Time</th>
+                <th scope="col">Roles</th>
+                <th scope="col" class="text-end">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th>1</th>
+                <td>
+                  Robert Fox
+                </td>
+                <td>
+                  January 1, 1970
+                </td>
+                <td>
+                  <span class="badge badge-lg badge-dot">
+                    <i class="bg-success"></i>Yesterday
+                  </span>
+                </td>
+                <td>
+                  Simple User
+                </td>
+                <td class="text-end">
+                  <a href="#" class="btn btn-sm btn-neutral text-danger-hover">
+                    <span class="pe-2">
+                      <i class="bi bi-eye"></i>
+                    </span>
+                    View
+                  </a>
+                  <a href="#" class="btn btn-sm btn-neutral">
+                    <span class="pe-2">
+                      <i class="bi bi-pencil"></i>
+                    </span>
+                    Edit
+                  </a>
+                  <a href="#" class="btn btn-sm btn-neutral text-danger-hover">
+                    <span class="pe-2">
+                      <i class="bi bi-trash"></i>
+                    </span>
+                    Delete
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
