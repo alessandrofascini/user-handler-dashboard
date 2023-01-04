@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserLocalService} from "./user-local.service";
 
 @Component({
   selector: 'app-root',
