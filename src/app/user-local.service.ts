@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import {UserServiceService} from "./user-service.service";
+import {UserInterfaceService} from "./user-interface.service";
 import User from "./interfaces/User";
 import {observable, Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserLocalService extends UserServiceService {
+export class UserLocalService extends UserInterfaceService {
   users: User[] = [];
   constructor() {
     super();

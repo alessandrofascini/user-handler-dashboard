@@ -12,41 +12,42 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th>1</th>
+      <tr *ngFor="let user of users">
+        <th>{{user.id}}</th>
         <td>
-          Robert Fox
+          {{user.username}}
         </td>
         <td>
-          January 1, 1970
+          {{user.bornDate | date:'MMMM d, y'}}
         </td>
         <td>
-                  <span class="badge badge-lg badge-dot">
-                    <i class="bg-success"></i>Yesterday
-                  </span>
+<!--          <span class="badge badge-lg badge-dot">-->
+<!--            <i class="bg-success"></i>Yesterday-->
+<!--          </span>-->
+          {{user.lastTimeLogin | date: 'MMMM d, y HH:mm'}}
         </td>
         <td>
-          Simple User
+          {{user.roles}}
         </td>
         <td class="text-end">
-          <a href="#" class="btn btn-sm btn-neutral text-danger-hover">
+          <button class="btn btn-sm btn-neutral text-danger-hover" (click)="view(user.id)">
                     <span class="pe-2">
                       <i class="bi bi-eye"></i>
                     </span>
             View
-          </a>
-          <a href="#" class="btn btn-sm btn-neutral">
+          </button>
+          <button class="btn btn-sm btn-neutral" (click)="edit(user.id)">
                     <span class="pe-2">
                       <i class="bi bi-pencil"></i>
                     </span>
             Edit
-          </a>
-          <a href="#" class="btn btn-sm btn-neutral text-danger-hover">
+          </button>
+          <button class="btn btn-sm btn-neutral text-danger-hover" (click)="delete(user.id)">
                     <span class="pe-2">
                       <i class="bi bi-trash"></i>
                     </span>
             Delete
-          </a>
+          </button>
         </td>
       </tr>
       </tbody>

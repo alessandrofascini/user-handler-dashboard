@@ -11,7 +11,7 @@ const users: User[] = [...Array(5)].map((el, index) => ({
   id: index,
   username: `user#${index+1}`,
   password: `pwd:user#${index+1}`,
-  bornDate: new Date("01-01-1970 00:00"),
+  bornDate: new Date("1970-01-01"),
   lastTimeLogin: new Date(),
   roles: "ROLE_SIMPLE_USER",
 }));

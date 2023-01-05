@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 @Injectable({
   providedIn: 'root'
 })
-export abstract class UserServiceService {
+export abstract class UserInterfaceService {
   public abstract findAll(): Observable<Array<User>>;
   public abstract findById(id: number): Observable<User>;
   public abstract update(user: User): Observable<User>;
